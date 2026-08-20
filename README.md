@@ -43,9 +43,12 @@ one flat folder, both work.
 so a coin floor decides which ones reach Discord. Untradeables carry no price and have their own
 switch.
 
-**Players follow themselves.** A character found on a running client is tracked on Wise Old Man
-automatically, and the Players view re-reads the hiscores whenever you open it: hours to max,
+**Players follow themselves.** A character found on a running client is tracked automatically,
+and its hiscores are re-read whenever you open the Players view or select it: hours to max,
 total level, and the skills closest to 99.
+
+**The bot's own chat is caught.** When a script's reply feature answers someone, the message and
+the reply travel to Discord as one card.
 
 **Dry run by default.** Everything is classified and shown, nothing is sent, until you turn it
 off.
@@ -73,9 +76,10 @@ machine set to any other language.
 
 ## Players
 
-Characters found on running clients are followed on Wise Old Man without being typed in. Opening
-the view re-reads the hiscores, so the numbers are current: hours to max, total level, how many
-99s are done, and the skills closest to finishing, ordered by the experience actually left.
+Every character running on a client appears here on its own — nothing to type, nothing to
+switch on. Opening the view, or picking an account, re-reads the hiscores, so the figures are
+current: hours to max, total level, how many 99s are done, and the skills closest to finishing,
+ordered by the experience actually left rather than by level.
 
 ![Players](docs/players.png)
 
