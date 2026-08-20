@@ -1,4 +1,8 @@
-# RuneMonitor
+<p align="center">
+  <img src="docs/logo.png" alt="RuneMonitor" width="160" />
+</p>
+
+<h1 align="center">RuneMonitor</h1>
 
 Watches your bot client's log folder and sends you a Discord message when something worth
 knowing happens — a level milestone, the script pausing or dying, a valuable drop, someone
