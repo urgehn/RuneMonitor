@@ -71,6 +71,14 @@ machine set to any other language.
 
 ![Settings](docs/settings.png)
 
+## Players
+
+Characters found on running clients are followed on Wise Old Man without being typed in. Opening
+the view re-reads the hiscores, so the numbers are current: hours to max, total level, how many
+99s are done, and the skills closest to finishing, ordered by the experience actually left.
+
+![Players](docs/players.png)
+
 ## Accounts
 
 State, how long each account has been silent, levels and errors so far, and which window title
