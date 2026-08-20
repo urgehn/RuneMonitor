@@ -44,6 +44,9 @@ one flat folder, both work.
 **Dry run by default.** Everything is classified and shown, nothing is sent, until you turn it
 off.
 
+**English only.** There is no language setting, and numbers, dates and dialogs stay English on a
+machine set to any other language.
+
 ## Install
 
 1. Download `RuneMonitor-vX.Y.Z.zip` from the [latest release](../../releases/latest).
