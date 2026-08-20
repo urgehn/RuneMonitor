@@ -1,8 +1,6 @@
 <p align="center">
-  <img src="docs/logo.png" alt="RuneMonitor" width="160" />
+  <img src="docs/hero.png" alt="RuneMonitor" width="520" />
 </p>
-
-<h1 align="center">RuneMonitor</h1>
 
 Watches your bot client's log folder and sends you a Discord message when something worth
 knowing happens — a level milestone, the script pausing or dying, a valuable drop, someone
@@ -40,6 +38,14 @@ image to the alert. A failed capture never suppresses the alert.
 one flat folder, both work.
 
 **Keeps history on disk** so restarts do not lose it, and charts levels per day and per skill.
+
+**Drops are filtered by worth.** A bot killing for hours drops the same 20k rune over and over,
+so a coin floor decides which ones reach Discord. Untradeables carry no price and have their own
+switch.
+
+**Players follow themselves.** A character found on a running client is tracked on Wise Old Man
+automatically, and the Players view re-reads the hiscores whenever you open it: hours to max,
+total level, and the skills closest to 99.
 
 **Dry run by default.** Everything is classified and shown, nothing is sent, until you turn it
 off.
