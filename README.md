@@ -31,6 +31,14 @@ overrides both — so 99s always arrive while the grind stays quiet.
 **Notices when nothing happens.** A watchdog fires when an account stops writing lines at all,
 which is what a crashed, stuck or logged-out bot looks like from the outside.
 
+**Pings you when a bot stops earning.** Script stopped or paused, logged out, disconnected, or a
+log gone silent — one switch, whatever the per-type Ping boxes say. A second switch does the same
+for the bot answering someone in chat.
+
+**A ping that actually pings.** Discord notifies on numeric IDs, never on names: a message saying
+`<@yourname>` is delivered as plain text and nobody is told. RuneMonitor says so where you type
+it, rather than sending a mention that quietly reaches no one.
+
 **Screenshots the client**, even when its window is behind something else, and attaches the
 image to the alert. A failed capture never suppresses the alert.
 
