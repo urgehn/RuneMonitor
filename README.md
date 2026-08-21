@@ -61,8 +61,8 @@ name still has to be inferred, the stream says so.
 see that kind alone, click another to switch to it, click the same one again to go back to
 everything.
 
-**Dry run by default.** Everything is classified and shown, nothing is sent, until you turn it
-off.
+**Nothing to arm.** An event type with a webhook sends; one without says so in the stream. There
+is no separate live switch to leave off by accident.
 
 **English only.** There is no language setting, and numbers, dates and dialogs stay English on a
 machine set to any other language.
@@ -80,8 +80,8 @@ machine set to any other language.
    Microbot or Powbot. Use **Browse** for anything else.
 2. Under **Settings**, paste a Discord webhook URL and press **Send test message**.
    (Discord: Server Settings → Integrations → Webhooks → New Webhook → Copy URL.)
-3. Leave **Dry run** on until the event stream shows the right lines firing on the right events.
-4. Turn dry run off to go live.
+3. Watch the event stream. Every row says whether it was sent, and why not when it was not —
+   a level under the floor, a drop under the coin floor, or no webhook for that type yet.
 
 ![Settings](docs/settings.png)
 
