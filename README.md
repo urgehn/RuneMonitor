@@ -48,7 +48,18 @@ and its hiscores are re-read whenever you open the Players view or select it: ho
 total level, and the skills closest to 99.
 
 **The bot's own chat is caught.** When a script's reply feature answers someone, the message and
-the reply travel to Discord as one card.
+the reply travel to Discord as one card — including the replies the script decides not to send,
+which it logs as a bare `BAD RESPONSE (too long)`. A line that reads like conversation but that
+no pattern claims is called out in the stream instead of being dropped, and Settings has a scan
+that reports what a log's chat actually looks like.
+
+**Accounts are named by the client that writes the log**, not by whichever client started at
+about the same time — two clients opened seconds apart used to be able to swap names. When a
+name still has to be inferred, the stream says so.
+
+**One filter at a time.** The stream shows everything by default. Click a counter or a chip to
+see that kind alone, click another to switch to it, click the same one again to go back to
+everything.
 
 **Dry run by default.** Everything is classified and shown, nothing is sent, until you turn it
 off.
