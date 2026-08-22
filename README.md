@@ -28,6 +28,13 @@ screenshot of the client window, whether it pings you, and which Discord channel
 **Knows a 99 from a 43.** Notify every Nth level, never below a floor, and a milestone list that
 overrides both — so 99s always arrive while the grind stays quiet.
 
+**Tells you how this run is going.** One button on the Overview opens the current session: how
+long it has been running, what it earned, which bot earned it, every level gained and from what,
+the drops worth reading, the tasks and quests finished, the chat it had, and a timeline of the
+lot. Current session only — the History and Stats tabs still answer the lifetime questions.
+
+![Session summary](docs/session.png)
+
 **Notices when nothing happens.** A watchdog fires when an account stops writing lines at all,
 which is what a crashed, stuck or logged-out bot looks like from the outside.
 
