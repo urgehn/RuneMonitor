@@ -2,11 +2,25 @@
   <img src="docs/hero.png" alt="RuneMonitor" width="520" />
 </p>
 
-Watches your bot client's log folder and sends you a Discord message when something worth
-knowing happens — a level milestone, the script pausing or dying, a valuable drop, someone
-talking to your bot, or the bot going quiet.
+<p align="center">
+  <a href="https://github.com/urgehn/RuneMonitor/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/urgehn/RuneMonitor?style=flat-square&color=7c8dfb"></a>
+  <a href="https://github.com/urgehn/RuneMonitor/releases"><img alt="Downloads" src="https://img.shields.io/github/downloads/urgehn/RuneMonitor/total?style=flat-square&color=4ecfe6"></a>
+  <img alt="Windows" src="https://img.shields.io/badge/Windows%2010%2F11-x64-slate?style=flat-square">
+</p>
+
+# RuneMonitor — watch your OSRS bots from one window
+
+A Windows desktop monitor for Old School RuneScape bot clients. Point it at your client's log
+folder and it tells you what your accounts are doing — on screen, and on Discord when something
+happens that you would want to know about: a level, a valuable drop, someone talking to your bot,
+a script that stopped, or an account that went quiet.
+
+Works with **DreamBot**, and with any client that writes a log — the wording it looks for is a
+setting, not something compiled in.
 
 It reads log files and nothing else. It never touches the game, never types, never clicks.
+
+**[Download the latest release →](https://github.com/urgehn/RuneMonitor/releases/latest)**
 
 ![Overview](docs/overview.png)
 
