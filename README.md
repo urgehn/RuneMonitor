@@ -49,6 +49,15 @@ lot. Current session only — the History and Stats tabs still answer the lifeti
 
 ![Session summary](docs/session.png)
 
+**Tells you which quest a bot gave up on, and why.** A script that cannot finish a quest locks
+it and moves on, and the reason is a line in the log that scrolls away in seconds. RuneMonitor
+keeps it: what was missing, how many were short, whether it is something the bot could ever have
+fetched — an untradeable it cannot — and where the item comes from, with a link to the wiki page.
+"Show the log around this" opens the lines either side of the moment, read back out of the log
+file itself, however long ago it was and however many times the log has rolled since.
+
+![Quests](docs/quests.png)
+
 **Notices when nothing happens.** A watchdog fires when an account stops writing lines at all,
 which is what a crashed, stuck or logged-out bot looks like from the outside.
 
@@ -95,6 +104,14 @@ is no separate live switch to leave off by accident.
 
 **English only.** There is no language setting, and numbers, dates and dialogs stay English on a
 machine set to any other language.
+
+## Every number says where it came from
+
+The Help tab answers the questions the figures raise: where the levels and experience come from,
+what "time to max" divides by, what it is waiting for when it says it is learning, why a quest is
+blocked, what reaches Discord, and where the app keeps your data.
+
+![How this works](docs/help.png)
 
 ## Install
 
