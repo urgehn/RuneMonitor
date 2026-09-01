@@ -15,8 +15,14 @@ Point it at the folder your client writes logs to. You get a live view of every 
 Discord message when something happens that you'd actually want to know about: a level, a good
 drop, someone talking to your bot, a script that died, an account that went quiet.
 
-I built it around DreamBot because that's what I run. The patterns it matches are settings
-rather than hardcoded strings, so other clients work too if you're willing to tweak them.
+Works with **DreamBot** and with **BotClient**, and with anything else that keeps a log. I built
+it around DreamBot running P2P Master AI because that is what I run, then added BotClient when I
+moved over. The patterns it matches are settings rather than hardcoded strings, so a client I
+have never seen works too once you point it at the right wording.
+
+BotClient prints its log to a console window and writes no file at all. RuneMonitor reads that
+console for it, so nothing extra to install and nothing to run by hand. There is a
+[short setup below](#setting-up-with-botclient).
 
 It only reads log files. No injection, no input, nothing sent to the game.
 
@@ -135,6 +141,36 @@ your data.
 2. Unzip it anywhere and run `RuneMonitor.exe`.
 3. Windows 10 and 11 already have everything it needs. There's no installer. It writes to
    `%APPDATA%\RuneMonitor` and nowhere else.
+
+## Setting up with BotClient
+
+BotClient never writes a log file. It prints everything to a console window it makes itself, so
+there is nothing on disk for a monitor to read. RuneMonitor reads that console instead, one
+reader per client, and writes it into a folder it then watches like any other client's logs.
+
+1. Unzip the release somewhere and run `RuneMonitor.exe`. `RuneBridge.exe` sits beside it and
+   updates with it. You never run that one yourself.
+2. **Settings, Log source.** Set the log folder to something empty of your own, for example
+   `Documents\RuneMonitorLogs`. Turn on **Read clients that write no log file**, just under Poll
+   interval, and press Save settings.
+3. **Settings, Client profile.** Paste this into **Client window title**, which teaches it the
+   shape of a BotClient window so screenshots and names land on the right bot:
+
+   ```
+   ^(?:(?<client>BotClient)\s+-\s+(?<script>\S+)\s+-\s+(?<name>.+)|(?<client>DreamBot[^-]*?)\s+-\s+(?<name>[^-]+?)\s+-\s+(?<script>.+))$
+   ```
+
+   That one covers BotClient and DreamBot together, so you can run both.
+4. Paste a Discord webhook under **Discord** and press **Send test message**.
+5. Start your clients. Each one turns up within a few seconds, named after the character playing
+   on it, and its reader closes when you close RuneMonitor.
+
+**What you get from BotClient:** tasks, script state, breaks, errors, and an alert when a bot
+stops earning or gets stuck at the login screen.
+
+**What you do not:** drops, chat and pets. BotClient does not put game messages in its log at
+all, so nothing can read them out of it. Levels still work, because the Players page reads those
+from the hiscores rather than from the log. DreamBot writes all of it, if that matters to you.
 
 ## First run
 
